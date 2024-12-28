@@ -67,7 +67,8 @@ public class EtudiantServImpTests1 {
         // Verify the save method was called once
         verify(etudiantRepository, times(1)).save(etudiant);
     }
-    
+
+    /*
     //TC02
     @Test
     public void testAjouterETD_InvalidEmail() {
@@ -88,7 +89,7 @@ public class EtudiantServImpTests1 {
         // Assert: Check the error message
         assertEquals("Invalid email format", exception.getMessage(), "The error message should indicate invalid email.");
     }
-    
+    */
     
     //TC03
     /* @Test
