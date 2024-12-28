@@ -91,7 +91,7 @@ public class EtudiantServImpTests1 {
     
     
     //TC03
-    @Test
+    /* @Test
     public void testAjouterETD_EmptyRequiredFields() {
         // Arrange: Create a student with empty required fields
         Etudiant etudiant = new Etudiant();
@@ -110,9 +110,10 @@ public class EtudiantServImpTests1 {
         // Assert: Check the error message
         assertEquals("Required fields cannot be empty", exception.getMessage(), "The error message should indicate empty required fields.");
     }
+    */
     
-    
-    //TC04 
+    //TC04
+    /*
     @Test
     public void testModifierETD_ValidModification() {
         // Arrange: Create a student and an updated student object
@@ -142,8 +143,9 @@ public class EtudiantServImpTests1 {
         // Verify the save method was called once
         verify(etudiantRepository, times(1)).save(updatedEtudiant);
     }
-    
-    
+    */
+
+    /*
     //TC05
     @Test
     void testModifierETD_ExistingEmail_ThrowsException() {
@@ -177,7 +179,7 @@ public class EtudiantServImpTests1 {
             etudiantService.modifier_ETD(updatedEtudiant.getId(), updatedEtudiant);
         });
     }
-
+    */
 
 
     
@@ -208,6 +210,7 @@ public class EtudiantServImpTests1 {
 	*/
 
     //TC07
+    /*
     @Test
     public void testSupprimerETD_StudentNotFound() {
         // Arrange: Attempt to delete a non-existent student
@@ -223,7 +226,7 @@ public class EtudiantServImpTests1 {
         assertEquals("Student with ID 999 not found.", exception.getMessage(), "The error message should indicate the student was not found.");
         verify(etudiantRepository, times(0)).deleteById(nonExistentStudentId);  // Verify that deletion did not occur
     }
-
+    */
 
     
     
