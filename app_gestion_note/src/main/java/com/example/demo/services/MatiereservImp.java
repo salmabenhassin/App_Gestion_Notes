@@ -4,12 +4,9 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.example.demo.entities.Classe;
 import com.example.demo.entities.Matiere;
 import com.example.demo.entities.Module;
 import com.example.demo.entities.Note;
-import com.example.demo.entities.Specialite;
 import com.example.demo.repository.IMatiereRepository;
 import com.example.demo.repository.IModuleRepository;
 import com.example.demo.repository.INoteRepository;

@@ -2,9 +2,6 @@ package com.example.demo.services;
 
 import java.util.List;
 
-import org.springframework.data.repository.query.Param;
-
-import com.example.demo.entities.Etudiant;
 import com.example.demo.entities.Note;
 
 public interface INoteServ {

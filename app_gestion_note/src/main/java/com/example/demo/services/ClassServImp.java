@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entities.Classe;
 import com.example.demo.entities.Etudiant;
 import com.example.demo.entities.Module;
-import com.example.demo.entities.Note;
 import com.example.demo.entities.Specialite;
 import com.example.demo.repository.IClasseRepository;
 import com.example.demo.repository.IEtudiantRepository;

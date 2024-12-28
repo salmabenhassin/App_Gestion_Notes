@@ -17,6 +17,6 @@ public interface INoteRepository extends CrudRepository<Note, Long>{
 	List<Note> findByEtd(@Param("idEtd") Long idEtd);
 	@Query("SELECT n FROM Note n WHERE n.matiere.idMatiere = :idMatiere")
 	List<Note> findByMatiere(@Param("idMatiere") Long idMatiere);
-	@Query("SELECT n FROM Note n WHERE n.etudiant.classe = :idClasse")
+	@Query("SELECT n FROM Note n WHERE n.etudiant.classe.idclasse = :idClasse")
 	List<Note> findByClasse(@Param("idClasse") Long idClasse);
 }

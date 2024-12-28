@@ -74,6 +74,29 @@
 	            <groupId>org.springframework.boot</groupId>
 	            <artifactId>spring-boot-maven-plugin</artifactId>
 	        </plugin>
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-surefire-plugin</artifactId>
+	            <version>2.22.2</version>
+	            <configuration>
+	                <!-- Additional configuration options, if needed -->
+	                <includes>
+	                    <include>**/*Tests1.java</include> <!-- Specify which tests to run -->
+	                </includes>
+	            </configuration>
+	        </plugin>
+	        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-report-plugin</artifactId>
+            <version>2.22.2</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
 	    </plugins>
 	</build>
 </project>

@@ -2,7 +2,6 @@ package com.example.demo.services;
 
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,7 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.entities.Classe;
 import com.example.demo.entities.Etudiant;
-import com.example.demo.entities.Module;
 import com.example.demo.entities.Note;
 import com.example.demo.repository.IClasseRepository;
 import com.example.demo.repository.IEtudiantRepository;
